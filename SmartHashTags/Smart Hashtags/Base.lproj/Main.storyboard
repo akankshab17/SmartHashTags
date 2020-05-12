@@ -15,12 +15,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lU0-w6-x9F">
-                                <rect key="frame" x="0.0" y="88" width="414" height="297"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuM-0V-bkb">
-                                <rect key="frame" x="66" y="508" width="282" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuM-0V-bkb">
+                                <rect key="frame" x="66" y="711" width="282" height="60"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Import An Image">
@@ -31,7 +27,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hCY-pT-STC">
-                                <rect key="frame" x="35" y="599" width="345" height="60"/>
+                                <rect key="frame" x="42.5" y="802" width="329" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                 <state key="normal" title="Generate Hashtags">
                                     <color key="titleColor" red="0.58081901069999997" green="0.088427625600000004" blue="0.31863921880000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -40,13 +36,20 @@
                                     <action selector="importHashtags:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iK9-fZ-1oA"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lU0-w6-x9F">
+                                <rect key="frame" x="0.0" y="108" width="414" height="583"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="hCY-pT-STC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="Ate-Gb-X6P"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hCY-pT-STC" secondAttribute="trailing" constant="34" id="C9k-Bq-Eax"/>
+                            <constraint firstItem="lU0-w6-x9F" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="E3b-AD-Pok"/>
+                            <constraint firstItem="lU0-w6-x9F" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GkL-8X-uU1"/>
+                            <constraint firstItem="WuM-0V-bkb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Y6n-2L-R5r"/>
+                            <constraint firstItem="lU0-w6-x9F" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jqQ-5C-aeD"/>
+                            <constraint firstItem="hCY-pT-STC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="m6u-X6-DEI"/>
                             <constraint firstItem="hCY-pT-STC" firstAttribute="top" secondItem="WuM-0V-bkb" secondAttribute="bottom" constant="31" id="ppd-mb-KFj"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hCY-pT-STC" secondAttribute="bottom" constant="203" id="zW3-Eh-zzJ"/>
+                            <constraint firstItem="WuM-0V-bkb" firstAttribute="top" secondItem="lU0-w6-x9F" secondAttribute="bottom" constant="20" id="sn6-CE-Abl"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hCY-pT-STC" secondAttribute="bottom" id="zW3-Eh-zzJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -58,7 +61,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-151" y="-279"/>
+            <point key="canvasLocation" x="-159.42028985507247" y="-382.36607142857139"/>
         </scene>
         <!--Hash Tag Display View Controller-->
         <scene sceneID="QGz-Oh-H6P">
