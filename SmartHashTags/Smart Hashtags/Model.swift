@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import Social
 
 public struct PhotoColor {
     let red: Int
@@ -20,3 +21,37 @@ public struct PhotoColor {
     var label: String
     var color: UIColor?
   }
+
+ public class TextProvider: NSObject, UIActivityItemSource {
+    var text: String
+    
+    public init(text: String) {
+        self.text = text
+        super.init()
+    }
+    
+    public func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return NSObject()
+    }
+
+    public func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        return text
+    }
+}
+
+ public class ImageProvider: NSObject, UIActivityItemSource {
+    var image: UIImage
+       
+       public init(image: UIImage) {
+           self.image = image
+           super.init()
+       }
+    
+   public  func activityViewControllerPlaceholderItem(_ activityViewController: UIActivityViewController) -> Any {
+        return image
+    }
+
+    public func activityViewController(_ activityViewController: UIActivityViewController, itemForActivityType activityType: UIActivity.ActivityType?) -> Any? {
+        return image
+    }
+}
